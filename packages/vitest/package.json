@@ -1,0 +1,52 @@
+{
+  "type": "module",
+  "name": "@fakes/email-vitest",
+  "version": "0.0.1",
+  "description": "fake mail integration for vitest",
+  "keywords": [
+    "email",
+    "fake",
+    "test",
+    "testing",
+    "vitest"
+  ],
+  "exports": {
+    "default": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf  dist",
+    "clean:deep": "pnpm clean && rimraf node_modules",
+    "prepublishOnly": "pnpm clean && pnpm build"
+  },
+  "dependencies": {
+    "@fakes/email": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "6.4.10",
+    "@fakes/email-chai": "workspace:*",
+    "nodemailer": "6.9.5",
+    "chai": "4.3.8"
+  },
+  "peerDependencies": {
+    "vitest": ">=0.30.0"
+  },
+  "publishConfig": {
+    "exports": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "readme.md",
+    "src",
+    "dist"
+  ],
+  "homepage": "https://github.com/signed/email-fake#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signed/email-fake.git",
+    "directory": "packages/vitest"
+  }
+}

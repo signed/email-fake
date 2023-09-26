@@ -1,0 +1,52 @@
+{
+  "type": "module",
+  "name": "@fakes/email-chai",
+  "version": "0.0.1",
+  "description": "fake mail implementation",
+  "keywords": [
+    "email",
+    "fake",
+    "test",
+    "testing",
+    "chai",
+    "assert",
+    "assertion"
+  ],
+  "exports": {
+    "default": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf  dist",
+    "clean:deep": "pnpm clean && rimraf node_modules",
+    "prepublishOnly": "pnpm clean && pnpm build"
+  },
+  "dependencies": {
+    "@fakes/email": "workspace:*",
+    "chai": "4.3.8",
+    "mailparser": "3.6.5"
+  },
+  "devDependencies": {
+    "@types/chai": "4.3.6",
+    "@types/mailparser": "3.4.0",
+    "typescript": "5.2.2"
+  },
+  "publishConfig": {
+    "exports": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "readme.md",
+    "src",
+    "dist"
+  ],
+  "homepage": "https://github.com/signed/email-fake#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signed/email-fake.git",
+    "directory": "packages/chai"
+  }
+}

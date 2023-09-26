@@ -1,0 +1,50 @@
+{
+  "type": "module",
+  "name": "@fakes/email",
+  "version": "0.0.1",
+  "description": "fake mail implementation",
+  "keywords": [
+    "email",
+    "fake",
+    "test",
+    "testing",
+    "unit",
+    "mock"
+  ],
+  "exports": {
+    "default": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf  dist",
+    "clean:deep": "pnpm clean && rimraf node_modules",
+    "prepublishOnly": "pnpm clean && pnpm build"
+  },
+  "dependencies": {
+    "mailparser": "3.6.5",
+    "smtp-server": "3.13.0"
+  },
+  "devDependencies": {
+    "@types/mailparser": "3.4.0",
+    "@types/nodemailer": "6.4.10",
+    "@types/smtp-server": "3.5.7",
+    "typescript": "5.2.2"
+  },
+  "publishConfig": {
+    "exports": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "homepage": "https://github.com/signed/email-fake#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signed/email-fake.git",
+    "directory": "packages/fake"
+  }
+}
