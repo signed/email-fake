@@ -5,7 +5,7 @@ Don't want to rely on hard coded email accounts?
 With [email-fake](./packages/fake) you can spin up a local smtp server in your tests to receive your emails.
 Email-fake builds on top of [smtp-server](https://github.com/nodemailer/smtp-server) and [mailparser](https://github.com/nodemailer/mailparser) to process incoming email.
 The technical details are hidden behind an [Inbox](./packages/fake/src/index.ts) abstraction.
-Additionally, there are some [chai assertions](./packages/chai) for common email properties to further ease testing and improve the readability of your tests.
+To further ease testing and improve the readability of your tests there are some [chai assertions](./packages/chai) for common email properties.
 With the [vitest integration](./packages/vitest) running a smtp server boils down to those few lines:
 
 ```typescript
