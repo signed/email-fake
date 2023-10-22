@@ -24,10 +24,10 @@
     "@fakes/email": "workspace:*"
   },
   "devDependencies": {
-    "@types/nodemailer": "6.4.10",
     "@fakes/email-chai": "workspace:*",
-    "nodemailer": "6.9.5",
-    "chai": "4.3.8"
+    "@types/nodemailer": "6.4.13",
+    "chai": "4.3.10",
+    "nodemailer": "6.9.7"
   },
   "peerDependencies": {
     "vitest": ">=0.30.0"

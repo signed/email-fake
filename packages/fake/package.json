@@ -26,9 +26,9 @@
     "smtp-server": "3.13.0"
   },
   "devDependencies": {
-    "@types/mailparser": "3.4.0",
-    "@types/nodemailer": "6.4.10",
-    "@types/smtp-server": "3.5.7",
+    "@types/mailparser": "3.4.3",
+    "@types/nodemailer": "6.4.13",
+    "@types/smtp-server": "3.5.9",
     "typescript": "5.2.2"
   },
   "publishConfig": {
