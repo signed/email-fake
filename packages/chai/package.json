@@ -28,7 +28,7 @@
     "mailparser": "3.6.5"
   },
   "devDependencies": {
-    "@types/chai": "4.3.6",
+    "@types/chai": "4.3.9",
     "@types/mailparser": "3.4.3",
     "typescript": "5.2.2"
   },
