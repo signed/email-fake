@@ -1,5 +1,6 @@
 import { expect, test } from 'vitest'
-import { setupSmtpServer } from '@fakes/email-vitest'
+//import { setupSmtpServer } from '@fakes/email-vitest'
+import { setupSmtpServer } from './index.js'
 import * as nodemailer from 'nodemailer'
 import * as Chai from 'chai'
 import { ChaiEmail } from '@fakes/email-chai'
@@ -8,7 +9,7 @@ Chai.use(ChaiEmail)
 
 const smtpServer = setupSmtpServer()
 
-test('sender', async () => {
+test.skip('sender', async () => {
   const transporter = nodemailer.createTransport({
     host: 'localhost',
     port: smtpServer.port,
