@@ -10,17 +10,17 @@ Chai.use(ChaiEmail)
 const smtpServer = setupSmtpServer()
 
 test('sender', async () => {
-    const transporter = nodemailer.createTransport({
-        host: 'localhost',
-        port: smtpServer.port,
-    })
-    await transporter.sendMail({
-        from: 'sender@example.org',
-        to: 'recipient@example.org',
-        subject: 'Hello World!',
-        text: 'How are you doing',
-    })
-    const email = smtpServer.inbox.singleEmail()
-    expect(email).from('sender@example.org')
+  const transporter = nodemailer.createTransport({
+    host: 'localhost',
+    port: smtpServer.port,
+  })
+  await transporter.sendMail({
+    from: 'sender@example.org',
+    to: 'recipient@example.org',
+    subject: 'Hello World!',
+    text: 'How are you doing',
+  })
+  const email = smtpServer.inbox.singleEmail()
+  expect(email).from('sender@example.org')
 })
 ```

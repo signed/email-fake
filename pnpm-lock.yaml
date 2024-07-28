@@ -12,8 +12,8 @@ importers:
         specifier: 2.27.1
         version: 2.27.1
       '@signed/prettier-config':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.2.0
+        version: 0.2.0
       '@tsconfig/node20':
         specifier: 20.1.2
         version: 20.1.2
@@ -21,8 +21,8 @@ importers:
         specifier: 2.0.2
         version: 2.0.2
       prettier:
-        specifier: 3.1.0
-        version: 3.1.0
+        specifier: 3.3.3
+        version: 3.3.3
       rimraf:
         specifier: 5.0.5
         version: 5.0.5
@@ -337,8 +337,8 @@ packages:
   '@selderee/plugin-htmlparser2@0.11.0':
     resolution: {integrity: sha512-P33hHGdldxGabLFjPPpaTxVolMrzrcegejx+0GxjrIb9Zv48D8yAIA/QTDR2dFl7Uz7urX8aX6+5bCZslr+gWQ==}
 
-  '@signed/prettier-config@0.1.0':
-    resolution: {integrity: sha512-gMob/Xh26ksh7Z3l/65WGHip9iuC5Jp6jUPxhLJcHEvfPntnRSjxfS2dzBQa/xW2q8zpCEHFNpf5T4IGqUB6LQ==}
+  '@signed/prettier-config@0.2.0':
+    resolution: {integrity: sha512-QTdGmp6k6bjCTw9mBW2qOjdesLsm3idbNXDLwbqDTt3DaMdNj+3Ae1mfcPcZbX5mgIcwo+u6B7mggMD4hjlylQ==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -1215,8 +1215,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.1.0:
-    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1971,7 +1971,7 @@ snapshots:
       domhandler: 5.0.3
       selderee: 0.11.0
 
-  '@signed/prettier-config@0.1.0': {}
+  '@signed/prettier-config@0.2.0': {}
 
   '@sinclair/typebox@0.27.8': {}
 
@@ -2923,7 +2923,7 @@ snapshots:
 
   prettier@2.8.8: {}
 
-  prettier@3.1.0: {}
+  prettier@3.3.3: {}
 
   pretty-format@29.7.0:
     dependencies:
@@ -3277,11 +3277,11 @@ snapshots:
 
   vite@4.5.0(@types/node@20.8.9):
     dependencies:
-      '@types/node': 20.8.9
       esbuild: 0.18.20
       postcss: 8.4.31
       rollup: 3.29.4
     optionalDependencies:
+      '@types/node': 20.8.9
       fsevents: 2.3.3
 
   vitest@0.34.3:

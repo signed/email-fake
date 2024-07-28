@@ -18,6 +18,6 @@ test('send email', () => {
   // execute your mail sending code
   sendMail(smtpServer.port)
   const email = smtpServer.inbox.singleEmail()
-  //assert the properties you care about  
+  //assert the properties you care about
 })
 ```
