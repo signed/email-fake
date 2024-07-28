@@ -27,7 +27,7 @@
     "@fakes/email-chai": "workspace:*",
     "@types/nodemailer": "6.4.13",
     "chai": "4.3.10",
-    "nodemailer": "6.9.7"
+    "nodemailer": "6.9.14"
   },
   "peerDependencies": {
     "vitest": ">=0.30.0"
