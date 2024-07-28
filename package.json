@@ -13,13 +13,13 @@
     "clean:deep": "pnpm --recursive clean:deep && rimraf node_modules"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.1",
+    "@changesets/cli": "2.27.7",
     "@signed/prettier-config": "0.2.0",
-    "@tsconfig/node20": "20.1.2",
-    "@tsconfig/strictest": "2.0.2",
+    "@tsconfig/node20": "20.1.4",
+    "@tsconfig/strictest": "2.0.5",
     "prettier": "3.3.3",
-    "rimraf": "5.0.5",
-    "typescript": "5.3.3",
+    "rimraf": "6.0.1",
+    "typescript": "5.5.4",
     "vitest": "0.34.3"
   },
   "prettier": "@signed/prettier-config"

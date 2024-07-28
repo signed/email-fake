@@ -22,14 +22,14 @@
     "prepublishOnly": "pnpm clean && pnpm build"
   },
   "dependencies": {
-    "mailparser": "3.6.5",
-    "smtp-server": "3.13.0"
+    "mailparser": "3.7.1",
+    "smtp-server": "3.13.4"
   },
   "devDependencies": {
-    "@types/mailparser": "3.4.3",
-    "@types/nodemailer": "6.4.13",
-    "@types/smtp-server": "3.5.9",
-    "typescript": "5.2.2"
+    "@types/mailparser": "3.4.4",
+    "@types/nodemailer": "6.4.15",
+    "@types/smtp-server": "3.5.10",
+    "typescript": "5.5.4"
   },
   "publishConfig": {
     "exports": {

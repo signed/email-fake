@@ -25,12 +25,12 @@
   "dependencies": {
     "@fakes/email": "workspace:*",
     "chai": "4.3.10",
-    "mailparser": "3.6.5"
+    "mailparser": "3.7.1"
   },
   "devDependencies": {
-    "@types/chai": "4.3.9",
-    "@types/mailparser": "3.4.3",
-    "typescript": "5.2.2"
+    "@types/chai": "4.3.16",
+    "@types/mailparser": "3.4.4",
+    "typescript": "5.5.4"
   },
   "publishConfig": {
     "exports": {
