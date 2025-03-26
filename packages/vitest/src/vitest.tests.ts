@@ -1,4 +1,5 @@
 import { describe, test, expect, beforeEach } from 'vitest'
+// @ts-ignore is exported, but missing in the types
 import { AssertionError } from 'chai'
 import * as Chai from 'chai'
 import { ChaiEmail } from '@fakes/email-chai'

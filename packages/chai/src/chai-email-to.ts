@@ -1,4 +1,3 @@
-import { AssertionError } from 'chai'
 import { ensureEmail } from './shared.js'
 import { ChaiPlugin } from './types.js'
 
@@ -16,9 +15,9 @@ export const ChaiEmailTo: ChaiPlugin = function (chai, utils) {
     const ssfi = utils.flag(this, 'ssfi')
     const to = actual.to
     if (to === undefined) {
-      throw new AssertionError('not implemented, to undefined')
+      throw new chai.AssertionError('not implemented, to undefined')
     } else if (Array.isArray(to)) {
-      throw new AssertionError('not implemented, to is an array')
+      throw new chai.AssertionError('not implemented, to is an array')
     } else {
       const assertTo = new Assertion(to.text, message, ssfi, true)
       utils.transferFlags(this, assertTo, false)
